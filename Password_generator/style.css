@@ -140,4 +140,19 @@ input[type="checkbox"]{
     border-radius: 4px;
     cursor: pointer;
     outline: none;
+    position: relative;
+    transition: all 0.3s;
+}
+input[type="checkbox"]:checked{
+    background-color: var(--primary-color);
+    
+}
+input[type="checkbox"]:checked::after { 
+    content: "\2714";
+    position: absolute;
+    color:#fff;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
 }
