@@ -25,12 +25,39 @@
                     <span id="length-value">12</span>
                 </div>
             </div>
-
+            <!-- uppercase -->
             <div class="option">
-                <label for="uppercase"></label>
+                <label for="uppercase">Include Uppercase</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <!-- lowercase -->
+            <div class="option">
+                <label for="lowercase">Include Lowercase</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <!-- numbers -->
+            <div class="option">
+                <label for="numbers">Include Numbers</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <!-- symbols -->
+            <div class="option">
+                <label for="symbols">Include Symbols</label>
+                <input type="checkbox" id="symbols" checked>
             </div>
         </div>
 
+        <button id="generate-btn">
+            <i class="fa-solid fa-key"></i>
+            Generate Password
+        </button>
+
+        <div class="strength-container">
+            <p>Password Strength: <span id="strength-label">Medium</span></p>
+            <div class="strength-meter">
+                <div class="strength-bar"></div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>
